@@ -6,12 +6,17 @@ El prototipo ofrece una interfaz web, API FastAPI, recuperación documental con 
 
 ## Estado verificable
 
-- Ejecutado en el entorno de elaboración: 70 pruebas automatizadas de Python y TestClient, sin fallos; 24 consultas sintéticas de desarrollo con Hit@1 y Hit@3 de 100 %; ocho comprobaciones HTTP reales contra Uvicorn local.
-- El adaptador del LLM se probó con transporte simulado. Esto **no** constituye inferencia con pesos reales.
-- Pendiente: construcción y ejecución Docker, ejecución generativa real, publicación en GitHub y resultado real de Actions. El despliegue en Render se documenta como procedimiento; no se afirma que exista un servicio publicado.
-- No se completó una prueba de navegador automatizada en el entorno de elaboración porque no está instalado el binario de Chromium. El script opcional está incluido. La comprobación GET de la interfaz no equivale a una prueba de interacción en navegador.
+Código publicado y GitHub Actions satisfactorio para el commit 4d7a321.
 
-Los resultados originales están en `evidence/baseline/`. Las nuevas ejecuciones se guardan en `evidence/generated/`, excluido de Git. No se deben presentar resultados pendientes como ejecutados.
+- Docker ejecutado en Codespaces: contenedor healthy y 70 pruebas correctas.
+- Ocho comprobaciones HTTP correctas en modalidad extractiva.
+- Ocho comprobaciones HTTP correctas en modalidad generativa, incluida una inferencia real con Qwen2.5:1.5b y Ollama.
+- Fallo inicial de citas documentado y corregido sin retirar la validación.
+- Fidelidad revisada para el ejemplo de contraseña; la evaluación generativa ampliada sigue pendiente.
+- Render se documenta como alternativa; no se afirma un despliegue allí.
+
+Reportes reales: evidence/evidencias_locales.zip.
+Los resultados de evidence/baseline corresponden al desarrollo inicial.
 
 ## Inicio rápido
 
@@ -147,7 +152,7 @@ git remote add origin https://github.com/USUARIO/copiloto-horizonte.git
 git push -u origin main
 ```
 
-No publiques `.env`. Si el repositorio es privado, concede acceso al docente. El workflow prueba Python y Docker en un runner Ubuntu. Aún no ha sido ejecutado en GitHub en esta entrega; conserva su resultado real después del push. No incluye una prueba real de LLM, que requiere descargar el modelo y revisar sus respuestas por separado.
+No publiques `.env`. Si el repositorio es privado, concede acceso al docente. El workflow prueba Python y Docker en un runner Ubuntu. El flujo terminó correctamente para el commit 4d7a321. No incluye una prueba real de LLM, que requiere descargar el modelo y revisar sus respuestas por separado.
 
 ## Prueba opcional de interfaz con navegador
 

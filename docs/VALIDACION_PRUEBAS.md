@@ -1,5 +1,26 @@
 # Validación y pruebas
 
+## Estado verificable
+
+Código publicado y GitHub Actions satisfactorio para el commit 4d7a321.
+
+- Docker ejecutado en Codespaces: contenedor healthy y 70 pruebas correctas.
+- Ocho comprobaciones HTTP correctas en modalidad extractiva.
+- Ocho comprobaciones HTTP correctas en modalidad generativa, incluida una inferencia real con Qwen2.5:1.5b y Ollama.
+- Fallo inicial de citas documentado y corregido sin retirar la validación.
+- Fidelidad revisada para el ejemplo de contraseña; la evaluación generativa ampliada sigue pendiente.
+- Render se documenta como alternativa; no se afirma un despliegue allí.
+
+Reportes reales: evidence/evidencias_locales.zip.
+Los resultados de evidence/baseline corresponden al desarrollo inicial.
+
+
+## Registro histórico del desarrollo inicial
+
+Los pendientes descritos a continuación corresponden a la versión inicial. El estado actualizado y sus evidencias se indican arriba.
+
+# Validación y pruebas
+
 ## 7 Documento de validación y pruebas
 
 ### Método y criterios de aceptación

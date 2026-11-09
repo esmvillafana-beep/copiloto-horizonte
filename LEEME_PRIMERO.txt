@@ -14,7 +14,7 @@ FASE II DE ESMERALDA VILLAFAÑA
 12. Actualiza el documento de Word para incorporar las acciones que realmente completes.
 
 Ya ejecutado: 70 pruebas de Python, evaluación de 24 consultas sintéticas y 8 comprobaciones HTTP contra Uvicorn local.
-Pendiente: Docker real, LLM real, GitHub y GitHub Actions. La nube tiene un manual; no se afirma que esté desplegada.
+Verificado: Docker en Codespaces, LLM real, publicación y Actions satisfactorio para 4d7a321. La nube tiene un manual; no se afirma que esté desplegada.
 
 No envíes .env ni muestres claves en capturas. Nunca agregues información real de clientes.
 No presentes el modo extractivo como generación mediante LLM.
