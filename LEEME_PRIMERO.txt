@@ -1,0 +1,21 @@
+FASE II DE ESMERALDA VILLAFAÑA
+
+1. Abre README.md y docs/MANUAL_DESPLIEGUE.md. Trabaja desde esta carpeta.
+2. Instala Python 3.12 y Docker Desktop. Inicia Docker Desktop.
+3. Crea y activa el entorno virtual. Instala requirements-lock.txt.
+4. Ejecuta python scripts/configure.py una sola vez para generar tus claves.
+5. Ejecuta docker compose up -d --build --wait --wait-timeout 180.
+6. Ejecuta python scripts/verify_docker.py. Esto generará evidencia REAL de Docker.
+7. Prueba la interfaz en http://127.0.0.1:8000. La clave se consulta en tu .env local.
+8. Sigue la sección de Ollama para activar y validar el modelo REAL.
+9. Completa docs/REVISION_GENERATIVA.csv revisando cada respuesta contra sus fuentes.
+10. Publica el proyecto en TU GitHub, concede acceso al docente y guarda el enlace y el commit.
+11. Ejecuta python scripts/package_evidence.py y agrega ese archivo al repositorio, después de revisarlo.
+12. Actualiza el documento de Word para incorporar las acciones que realmente completes.
+
+Ya ejecutado: 70 pruebas de Python, evaluación de 24 consultas sintéticas y 8 comprobaciones HTTP contra Uvicorn local.
+Pendiente: Docker real, LLM real, GitHub y GitHub Actions. La nube tiene un manual; no se afirma que esté desplegada.
+
+No envíes .env ni muestres claves en capturas. Nunca agregues información real de clientes.
+No presentes el modo extractivo como generación mediante LLM.
+El documento está escrito en primera persona. Revísalo y reproduce los pasos antes de entregar.

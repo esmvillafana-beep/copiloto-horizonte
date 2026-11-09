@@ -1,0 +1,168 @@
+[
+  {
+    "id": "DOC-001",
+    "title": "Restablecimiento de contraseña",
+    "version": "2.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Cómo restablecer la contraseña corporativa? Accede al portal de autoservicio, selecciona Restablecer contraseña y verifica tu identidad mediante el segundo factor. Si no puedes completar la verificación, solicita apoyo a la Mesa de Servicio. Nunca compartas contraseñas ni códigos temporales.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-002",
+    "title": "Reporte de correo sospechoso",
+    "version": "1.1",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Cómo reportar phishing o un correo sospechoso? No abras enlaces ni archivos adjuntos. Usa el botón Reportar phishing del correo corporativo y notifica al Centro de Seguridad. Conserva el mensaje para su análisis; no lo reenvíes a destinatarios externos.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-003",
+    "title": "Alta de nuevo colaborador",
+    "version": "1.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Qué pasos requiere el alta de un nuevo colaborador? La jefatura solicita el alta en el portal interno, Recursos Humanos confirma la incorporación y Tecnología asigna accesos según el puesto. Antes de habilitar los sistemas, el colaborador debe completar la capacitación de seguridad.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-004",
+    "title": "Validación de versión documental",
+    "version": "3.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Cómo verificar la versión vigente de un procedimiento? Consulta el catálogo documental autorizado y revisa la versión, la fecha de aprobación y el estado vigente. Si una copia local difiere del catálogo, utiliza la versión publicada y comunica la discrepancia al responsable documental.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-005",
+    "title": "Incidente operativo",
+    "version": "1.2",
+    "roles": [
+      "operaciones"
+    ],
+    "text": "¿Cómo registrar un incidente operativo? Registra el incidente en la mesa operativa con fecha, proceso afectado e impacto observado. Adjunta únicamente evidencias sin datos personales. La supervisión clasifica la prioridad y asigna al responsable de seguimiento.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-006",
+    "title": "Conciliación de cierre",
+    "version": "2.1",
+    "roles": [
+      "operaciones"
+    ],
+    "text": "¿Qué hacer ante diferencias en la conciliación de cierre? Compara los totales del sistema con el reporte autorizado, registra la diferencia en la bitácora y solicita revisión a la supervisión. No ajustes saldos ni ejecutes movimientos para compensar diferencias sin autorización.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-007",
+    "title": "Solicitud de vacaciones",
+    "version": "1.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Cómo solicitar vacaciones? Captura las fechas en el portal de Recursos Humanos y envía la solicitud a tu jefatura. La aprobación depende de la cobertura operativa. Verifica la autorización registrada antes de considerar confirmadas las fechas.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-008",
+    "title": "Confidencialidad de información",
+    "version": "2.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Cómo proteger la información confidencial? Utiliza repositorios institucionales autorizados y comparte documentos solo con personas que tengan permiso. No cargues datos de clientes, números de cuenta ni expedientes en herramientas externas no aprobadas. Reporta cualquier exposición al Centro de Seguridad.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-009",
+    "title": "Escalamiento al responsable humano",
+    "version": "1.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Cuándo escalar una consulta a una persona responsable? Escala si no existe una fuente vigente, si las fuentes se contradicen o si la consulta requiere una decisión financiera o una excepción a políticas. El copiloto orienta; la persona autorizada revisa y decide.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-010",
+    "title": "Revisión de matriz de riesgos",
+    "version": "1.3",
+    "roles": [
+      "riesgos"
+    ],
+    "text": "¿Cómo revisar la matriz de riesgos? El analista de Riesgos evalúa impacto y probabilidad, documenta controles existentes y registra el riesgo residual. El Comité de Riesgos revisa los cambios materiales. El código sintético de este procedimiento es HORIZONTE-R7.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-011",
+    "title": "Continuidad operativa",
+    "version": "1.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Qué hacer ante una interrupción de los sistemas? Informa a la Mesa de Servicio, registra la hora de inicio y aplica únicamente el procedimiento de continuidad vigente para tu área. La coordinación de continuidad confirma la recuperación antes de reanudar las tareas.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-012",
+    "title": "Solicitud de acceso adicional",
+    "version": "1.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "¿Cómo solicitar un acceso adicional a sistemas? Registra la solicitud en el portal de identidades, explica la necesidad del puesto y solicita aprobación de la jefatura y del propietario del recurso. Tecnología habilita solo los privilegios aprobados. No utilices cuentas de otras personas.",
+    "status": "vigente",
+    "approved_at": "2026-01-15",
+    "synthetic": true
+  },
+  {
+    "id": "DOC-004-OLD",
+    "title": "Validación de versión documental histórica",
+    "version": "1.0",
+    "roles": [
+      "operaciones",
+      "riesgos"
+    ],
+    "text": "Procedimiento histórico sustituido. El marcador VENCIDO-X9 no debe aparecer en resultados.",
+    "status": "sustituido",
+    "approved_at": "2024-01-15",
+    "synthetic": true
+  }
+]

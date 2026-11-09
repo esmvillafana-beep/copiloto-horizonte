@@ -1,0 +1,146 @@
+[
+  {
+    "id": "G01",
+    "role": "operaciones",
+    "question": "¿Cómo restablecer mi contraseña corporativa?",
+    "expected_document": "DOC-001"
+  },
+  {
+    "id": "G02",
+    "role": "riesgos",
+    "question": "¿Dónde verifico mi identidad para restablecer la contraseña?",
+    "expected_document": "DOC-001"
+  },
+  {
+    "id": "G03",
+    "role": "operaciones",
+    "question": "¿Cómo reportar phishing?",
+    "expected_document": "DOC-002"
+  },
+  {
+    "id": "G04",
+    "role": "riesgos",
+    "question": "¿Qué hago con un correo sospechoso y sus archivos adjuntos?",
+    "expected_document": "DOC-002"
+  },
+  {
+    "id": "G05",
+    "role": "operaciones",
+    "question": "¿Qué pasos requiere el alta de un nuevo colaborador?",
+    "expected_document": "DOC-003"
+  },
+  {
+    "id": "G06",
+    "role": "riesgos",
+    "question": "¿Quién confirma la incorporación del nuevo colaborador?",
+    "expected_document": "DOC-003"
+  },
+  {
+    "id": "G07",
+    "role": "operaciones",
+    "question": "¿Cómo verificar la versión vigente de un procedimiento?",
+    "expected_document": "DOC-004"
+  },
+  {
+    "id": "G08",
+    "role": "riesgos",
+    "question": "¿Qué hago si una copia local difiere del catálogo documental?",
+    "expected_document": "DOC-004"
+  },
+  {
+    "id": "G09",
+    "role": "operaciones",
+    "question": "¿Cómo registrar un incidente operativo?",
+    "expected_document": "DOC-005"
+  },
+  {
+    "id": "G10",
+    "role": "operaciones",
+    "question": "¿Qué evidencias debo adjuntar al incidente operativo?",
+    "expected_document": "DOC-005"
+  },
+  {
+    "id": "G11",
+    "role": "operaciones",
+    "question": "¿Qué hacer ante diferencias en la conciliación de cierre?",
+    "expected_document": "DOC-006"
+  },
+  {
+    "id": "G12",
+    "role": "operaciones",
+    "question": "¿Puedo ajustar los saldos para compensar diferencias de conciliación?",
+    "expected_document": "DOC-006"
+  },
+  {
+    "id": "G13",
+    "role": "operaciones",
+    "question": "¿Cómo solicitar vacaciones?",
+    "expected_document": "DOC-007"
+  },
+  {
+    "id": "G14",
+    "role": "riesgos",
+    "question": "¿Quién autoriza las fechas de mis vacaciones?",
+    "expected_document": "DOC-007"
+  },
+  {
+    "id": "G15",
+    "role": "operaciones",
+    "question": "¿Cómo proteger la información confidencial?",
+    "expected_document": "DOC-008"
+  },
+  {
+    "id": "G16",
+    "role": "riesgos",
+    "question": "¿Puedo cargar datos de clientes en herramientas externas no aprobadas?",
+    "expected_document": "DOC-008"
+  },
+  {
+    "id": "G17",
+    "role": "operaciones",
+    "question": "¿Cuándo escalar una consulta a una persona responsable?",
+    "expected_document": "DOC-009"
+  },
+  {
+    "id": "G18",
+    "role": "riesgos",
+    "question": "¿Qué hago si las fuentes se contradicen?",
+    "expected_document": "DOC-009"
+  },
+  {
+    "id": "G19",
+    "role": "riesgos",
+    "question": "¿Cómo revisar la matriz de riesgos?",
+    "expected_document": "DOC-010"
+  },
+  {
+    "id": "G20",
+    "role": "riesgos",
+    "question": "¿Quién revisa los cambios materiales de la matriz de riesgos?",
+    "expected_document": "DOC-010"
+  },
+  {
+    "id": "G21",
+    "role": "operaciones",
+    "question": "¿Qué hacer ante una interrupción de los sistemas?",
+    "expected_document": "DOC-011"
+  },
+  {
+    "id": "G22",
+    "role": "riesgos",
+    "question": "¿Quién confirma la recuperación antes de reanudar tareas de continuidad?",
+    "expected_document": "DOC-011"
+  },
+  {
+    "id": "G23",
+    "role": "operaciones",
+    "question": "¿Cómo solicitar un acceso adicional a sistemas?",
+    "expected_document": "DOC-012"
+  },
+  {
+    "id": "G24",
+    "role": "riesgos",
+    "question": "¿Quién aprueba los privilegios para un acceso adicional?",
+    "expected_document": "DOC-012"
+  }
+]

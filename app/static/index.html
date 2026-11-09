@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copiloto Operativo Horizonte</title>
+<style>body{font-family:system-ui,sans-serif;background:#f4f6f9;color:#172538;max-width:850px;margin:40px auto;padding:0 20px}main{background:white;padding:28px;border-radius:12px}h1{font-size:28px}label{display:block;font-weight:600;margin-top:18px}input,textarea{box-sizing:border-box;width:100%;padding:12px;border:1px solid #8797a8;border-radius:5px;font:inherit;margin-top:7px}button{padding:12px 24px;background:#164a6e;color:white;border:0;border-radius:5px;margin-top:20px;font:inherit;cursor:pointer}button:disabled{opacity:.6}pre{white-space:pre-wrap;font-family:inherit;line-height:1.6}li{margin-bottom:12px}.muted{color:#506478;font-size:14px}#result{border-top:1px solid #dce2e8;margin-top:25px;padding-top:15px}</style></head>
+<body><main><p class="muted">BANCO HORIZONTE DIGITAL · PROTOTIPO ACADÉMICO</p><h1>Copiloto Operativo</h1>
+<p>Consulta procedimientos ficticios y revisa las fuentes antes de usar la respuesta. No ingreses datos personales ni información de clientes.</p>
+<form id="form"><label for="key">Clave de acceso del rol</label><input id="key" type="password" required autocomplete="off" placeholder="Clave configurada en el servidor">
+<label for="question">Pregunta</label><textarea id="question" rows="4" required minlength="5" maxlength="1000" placeholder="¿Cómo restablecer la contraseña corporativa?"></textarea>
+<button id="send" type="submit">Consultar documentos</button></form>
+<p class="muted">La clave se utiliza en esta solicitud y no se guarda en el navegador. La herramienta no ejecuta operaciones financieras.</p>
+<section id="result" hidden aria-live="polite"><h2>Resultado</h2><p id="meta" class="muted"></p><pre id="answer"></pre><h3>Fuentes recuperadas</h3><ul id="sources"></ul></section>
+<p><a href="/docs">Documentación interactiva de la API</a></p></main>
+<script>
+const form=document.getElementById('form');
+form.addEventListener('submit',async event=>{event.preventDefault();const button=document.getElementById('send');button.disabled=true;
+const result=document.getElementById('result'),answer=document.getElementById('answer'),meta=document.getElementById('meta'),sources=document.getElementById('sources');
+result.hidden=false;sources.replaceChildren();answer.textContent='Consultando…';meta.textContent='';
+try{const response=await fetch('/api/v1/query',{method:'POST',headers:{'Content-Type':'application/json','X-API-Key':document.getElementById('key').value},body:JSON.stringify({question:document.getElementById('question').value,top_k:2})});
+const data=await response.json();if(!response.ok)throw new Error(response.status===401?'Verifica tu clave de acceso.':response.status===422?'Revisa la longitud y el contenido de la pregunta.':response.status===503?'El generador no está disponible. Solicita revisión humana.':'No fue posible completar la solicitud.');
+answer.textContent=data.answer;meta.textContent=`Estado: ${data.status} | Modo: ${data.mode} | Tiempo de API: ${data.latency_ms} ms | Solicitud: ${data.request_id}`;
+for(const source of data.sources){const li=document.createElement('li');li.textContent=`${source.id} · ${source.title} · Versión ${source.version} · Aprobación ${source.approved_at} · Similitud ${source.score}`;sources.appendChild(li);}
+if(!data.sources.length){const li=document.createElement('li');li.textContent='Sin fuentes para esta solicitud.';sources.appendChild(li);}}
+catch(error){answer.textContent=error.message;}finally{button.disabled=false;}});
+</script></body></html>

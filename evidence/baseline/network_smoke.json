@@ -1,0 +1,207 @@
+{
+  "executed_at_utc": "2026-11-09T04:00:22.108465+00:00",
+  "base_url": "http://127.0.0.1:8765",
+  "expected_mode": "extractive",
+  "checks": [
+    {
+      "case": "health",
+      "method": "GET",
+      "path": "/health",
+      "http_status": 200,
+      "expected_http_status": 200,
+      "passed": true,
+      "response": {
+        "status": "ok",
+        "version": "1.0.0",
+        "mode": "extractive"
+      }
+    },
+    {
+      "case": "frontend_http",
+      "method": "GET",
+      "path": "/",
+      "http_status": 200,
+      "expected_http_status": 200,
+      "passed": true,
+      "response": {
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "case": "unauthorized",
+      "method": "POST",
+      "path": "/api/v1/query",
+      "http_status": 401,
+      "expected_http_status": 401,
+      "passed": true,
+      "response": {
+        "detail": "Credencial ausente o inválida."
+      }
+    },
+    {
+      "case": "invalid_input",
+      "method": "POST",
+      "path": "/api/v1/query",
+      "http_status": 422,
+      "expected_http_status": 422,
+      "passed": true,
+      "response": {
+        "detail": [
+          {
+            "type": "string_too_short",
+            "loc": [
+              "body",
+              "question"
+            ],
+            "msg": "String should have at least 5 characters",
+            "input": "",
+            "ctx": {
+              "min_length": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case": "documented_answer",
+      "method": "POST",
+      "path": "/api/v1/query",
+      "http_status": 200,
+      "expected_http_status": 200,
+      "passed": true,
+      "response": {
+        "request_id": "62aedd21-6e52-467b-9196-98a757056ad9",
+        "status": "answered",
+        "answer": "Referencia documental para revisión humana:\n[DOC-001] ¿Cómo restablecer la contraseña corporativa? Accede al portal de autoservicio, selecciona Restablecer contraseña y verifica tu identidad mediante el segundo factor. Si no puedes completar la verificación, solicita apoyo a la Mesa de Servicio. Nunca compartas contraseñas ni códigos temporales.",
+        "sources": [
+          {
+            "id": "DOC-001",
+            "title": "Restablecimiento de contraseña",
+            "version": "2.0",
+            "approved_at": "2026-01-15",
+            "excerpt": "¿Cómo restablecer la contraseña corporativa? Accede al portal de autoservicio, selecciona Restablecer contraseña y verifica tu identidad mediante el segundo factor. Si no puedes completar la verificación, solicita apoyo a la Mesa de Servicio. Nunca compartas contraseñas ni códigos temporales.",
+            "score": 0.488072
+          }
+        ],
+        "mode": "extractive",
+        "requires_human_review": true,
+        "latency_ms": 1.484
+      }
+    },
+    {
+      "case": "abstention",
+      "method": "POST",
+      "path": "/api/v1/query",
+      "http_status": 200,
+      "expected_http_status": 200,
+      "passed": true,
+      "response": {
+        "request_id": "44420a2a-b946-4944-9009-7aef5b1e70ce",
+        "status": "no_evidence",
+        "answer": "No encontré evidencia suficiente en las fuentes autorizadas. Consulta a la persona responsable.",
+        "sources": [],
+        "mode": "extractive",
+        "requires_human_review": true,
+        "latency_ms": 0.711
+      }
+    },
+    {
+      "case": "blocked_operation",
+      "method": "POST",
+      "path": "/api/v1/query",
+      "http_status": 200,
+      "expected_http_status": 200,
+      "passed": true,
+      "response": {
+        "request_id": "60f545ca-5928-4a36-9067-289cd4f96d44",
+        "status": "blocked",
+        "answer": "El copiloto no ejecuta operaciones ni autoriza decisiones financieras. Acude a la persona responsable.",
+        "sources": [],
+        "mode": "extractive",
+        "requires_human_review": true,
+        "latency_ms": 0.02
+      }
+    },
+    {
+      "case": "catalog",
+      "method": "GET",
+      "path": "/api/v1/documents",
+      "http_status": 200,
+      "expected_http_status": 200,
+      "passed": true,
+      "response": {
+        "documents": [
+          {
+            "id": "DOC-001",
+            "title": "Restablecimiento de contraseña",
+            "version": "2.0",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-002",
+            "title": "Reporte de correo sospechoso",
+            "version": "1.1",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-003",
+            "title": "Alta de nuevo colaborador",
+            "version": "1.0",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-004",
+            "title": "Validación de versión documental",
+            "version": "3.0",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-005",
+            "title": "Incidente operativo",
+            "version": "1.2",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-006",
+            "title": "Conciliación de cierre",
+            "version": "2.1",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-007",
+            "title": "Solicitud de vacaciones",
+            "version": "1.0",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-008",
+            "title": "Confidencialidad de información",
+            "version": "2.0",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-009",
+            "title": "Escalamiento al responsable humano",
+            "version": "1.0",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-011",
+            "title": "Continuidad operativa",
+            "version": "1.0",
+            "approved_at": "2026-01-15"
+          },
+          {
+            "id": "DOC-012",
+            "title": "Solicitud de acceso adicional",
+            "version": "1.0",
+            "approved_at": "2026-01-15"
+          }
+        ]
+      }
+    }
+  ],
+  "semantic_checks_passed": true,
+  "success": true,
+  "scope": "HTTP real contra la URL indicada. La presencia de fuentes no prueba por sí sola la fidelidad de un LLM."
+}

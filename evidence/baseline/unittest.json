@@ -1,0 +1,303 @@
+{
+  "executed_at_utc": "2026-11-09T03:58:54.757110+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "packages": {
+      "fastapi": "0.141.1",
+      "uvicorn": "0.52.1",
+      "httpx": "0.28.1",
+      "scikit-learn": "1.8.0",
+      "pydantic": "2.13.4"
+    }
+  },
+  "corpus_sha256": "3c30a3cd16513eefe779a1ea5a770c32e449bb01184c0fbf8949e58e4d5c792c",
+  "tests_run": 70,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "cases": [
+    {
+      "test": "tests.test_generator.AdapterTests.test_compatible_http_contract",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.AdapterTests.test_empty_generation",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.AdapterTests.test_invalid_json",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.AdapterTests.test_invalid_response_schema",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.AdapterTests.test_missing_citation",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.AdapterTests.test_provider_500",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.AdapterTests.test_timeout",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.AdapterTests.test_unauthorized_citation",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.AdapterTests.test_unknown_citation",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.GenerationEndpointTests.test_generator_failure_returns_503",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_generator.GenerationEndpointTests.test_only_authorized_context_reaches_generator",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.ConfigurationTests.test_empty_corpus_fail",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.ConfigurationTests.test_empty_keys_fail_closed",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.ConfigurationTests.test_equal_keys_fail",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.ConfigurationTests.test_wrong_mode_fail",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.ConfigurationTests.test_wrong_threshold_fail",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_ambiguous_question_abstains",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_boolean_top_k",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_catalog_is_protected",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_citation_matches_corpus",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_empty_question",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_financial_execution_is_blocked",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_frontend",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_health",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_human_review_and_trace",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_injection_is_blocked",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_long_question",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_malformed_json",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_missing_credentials",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_numeric_question",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_openapi_contract",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_operations_cannot_list_risk_document",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_operations_cannot_retrieve_risk_document",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_question_at_maximum",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retired_version_excluded",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G01",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G02",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G03",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G04",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G05",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G06",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G07",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G08",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G09",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G10",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G11",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G12",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G13",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G14",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G15",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G16",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G17",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G18",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G19",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G20",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G21",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G22",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G23",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_retrieval_G24",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_risk_cannot_list_operations_document",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_risk_cannot_retrieve_operations_document",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_role_spoofing",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_sensitive_number_is_blocked",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_short_question",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_top_k_above_limit",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_top_k_zero",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_unknown_topic_abstains",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_whitespace_question",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_wrong_credentials",
+      "result": "passed"
+    },
+    {
+      "test": "tests.test_system.FunctionalTests.test_wrong_type",
+      "result": "passed"
+    }
+  ],
+  "scope": "Python y TestClient; adaptador LLM con transporte simulado. No prueba Docker ni un LLM real."
+}

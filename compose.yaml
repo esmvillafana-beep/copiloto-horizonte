@@ -1,0 +1,30 @@
+services:
+  api:
+    build:
+      context: .
+      target: production
+    image: copiloto-horizonte:1.0.0
+    env_file: .env
+    ports:
+      - "127.0.0.1:8000:8000"
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+  ollama:
+    image: ollama/ollama:latest
+    profiles: [llm]
+    volumes:
+      - ollama_models:/root/.ollama
+    # Sin puerto público; API accesible solo en la red de Compose.
+  tests:
+    build:
+      context: .
+      target: test
+    profiles: [test]
+volumes:
+  ollama_models:

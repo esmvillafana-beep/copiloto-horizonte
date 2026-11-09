@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+evidence/generated/
+
+/Codigo_Fase_II_Copiloto_Horizonte.zip

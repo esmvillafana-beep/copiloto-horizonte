@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: copiloto-horizonte
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeployTrigger: off
+    envVars:
+      - key: OPERACIONES_API_KEY
+        generateValue: true
+      - key: RIESGOS_API_KEY
+        generateValue: true
+      - key: ANSWER_MODE
+        value: extractive
+      - key: RETRIEVAL_THRESHOLD
+        value: "0.18"
